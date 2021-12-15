@@ -1,0 +1,9 @@
+CSCI318\Order\Repository\OrderRepository.class
+CSCI318\Order\Controller\OrderController.class
+CSCI318\Order\OrderApplication.class
+CSCI318\Order\Model\Order.class
+CSCI318\Order\Repository\OrderEventRepository.class
+CSCI318\Order\Service\OrderEventHandler.class
+CSCI318\Order\Service\OrderLoader.class
+CSCI318\Order\Model\OrderEvent.class
+CSCI318\Order\Service\OrderService.class

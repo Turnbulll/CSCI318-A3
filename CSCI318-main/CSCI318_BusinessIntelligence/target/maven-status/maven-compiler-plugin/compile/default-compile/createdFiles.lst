@@ -1,0 +1,6 @@
+CSCI318\BusinessIntelligence\QueryController.class
+CSCI318\BusinessIntelligence\Model\OrderEvent.class
+CSCI318\BusinessIntelligence\BusinessIntelligenceApplication.class
+CSCI318\BusinessIntelligence\Service\ProductStreamProcessing.class
+CSCI318\BusinessIntelligence\Model\ProductQuantity.class
+CSCI318\BusinessIntelligence\Service\ProductInteractiveQuery.class

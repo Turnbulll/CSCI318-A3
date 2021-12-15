@@ -1,0 +1,15 @@
+http://localhost:8080/Customer                  //Finds a list of customers (GET request)
+http://localhost:8080/Contact                   //Finds a list of contacts (GET request)
+http://localhost:8080/Customer/{id}             //Finds a customer by id (GET request)
+http://localhost:8080/Contact/{id}              //Finds a contact by id (GET request)
+http://localhost:8080/Customer/New              //Creates new customer when sent with the JSON code (POST request)
+http://localhost:8080/Contact/New               //Creates new contact when sent with JSON code (POST request)
+http://localhost:8080/Customer/{id}             //Sent as a delete request will delete customer with matching ID (DELETE request)
+http://localhost:8080/Contact/{id}              //Sent as a delete request will delete contact with matching ID (DELETE request)
+http://localhost:8080/Contact/{id}?var=newVar   //Updates var to newVar in contact (PUT request)
+http://localhost:8080/Customer/{id}?var=newVar  //Update var to newVar in Customer (PUT request)
+
+To run the jar 
+-move to its location and using the commandline (use cd to move) it will be located in the target folder of the project after running the mvn project
+-use the command "java -jar {filename}" 
+-this should run the jar

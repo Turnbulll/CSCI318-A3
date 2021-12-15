@@ -1,0 +1,28 @@
+server.port: 4040
+spring.cloud.stream.bindings:
+  Process-in-0:
+        destination: order-topic
+  Process-out-0:
+        destination: product-topic 
+spring.cloud.stream.kafka.streams.binder:
+  brokers: localhost:9092
+  configuration:
+    commit.interval.ms: 1000
+  serdeError: logAndContinue
+spring.cloud.stream.kafka.streams.bindings:
+  Process-in-0:
+    consumer:
+      configuration:
+        default.key.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+        default.value.serde: org.springframework.kafka.support.serializer.JsonSerde
+        #spring.json.trusted.packages: '*'
+        #spring.json.value.default.type: CSCI318.BusinessIntelligence.Model.OrderEvent
+  Process-out-0:
+    producer:
+      configuration:
+        default.key.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+        default.value.serde: org.springframework.kafka.support.serializer.JsonSerde
+        #spring.json.trusted.packages: '*'
+        #spring.json.value.default.type: CSCI318.BusinessIntelligence.Model.ProductQuantity
+
+#spring.cloud.stream.kafka.streams.binder.stateStoreRetry.maxAttempts: 3
